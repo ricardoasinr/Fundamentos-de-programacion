@@ -1,32 +1,28 @@
 //
 //  main.cpp
-//  While
+//  For-ejemplos2
 //
-//  Created by Ricardo Asin on 13/9/22.
+//  Created by Ricardo Asin on 19/9/22.
 //
 
 #include <iostream>
-#include <math.h>
 
 using namespace std;
 
 int main() {
-    // insert code here...
-    cout << "Hasta que numero?"<<endl;
+    
     int n;
+    
+    int sumaPar = 0;
+    int sumaImpar = 0;
+    
+    
+    cout <<"Números pares del 1-N "<<endl;
     cin>>n;
     
-    int inicio = 1;
-    
-    int i;
-    i = inicio;
-    
-    int sumaPar=0;
-    int sumaImpar=0;
-    
-    while(i<=n){
-        if(i%2 == 0)
-        {
+    for (int i = 0; i<=n; i++) {
+        
+        if(i%2==0){
             cout<<"Número par: "<<i<<endl;
             sumaPar=sumaPar+i;
         }
@@ -34,10 +30,14 @@ int main() {
             cout<<"Número impar: "<<i<<endl;
             sumaImpar=sumaImpar+i;
         }
-        i++;
+        
     }
     
     cout<<"La suma de números pares es: "<<sumaPar<<endl;
     cout<<"La suma de números impares es: "<<sumaImpar<<endl;
+    
+ 
+   
+    
     return 0;
 }
