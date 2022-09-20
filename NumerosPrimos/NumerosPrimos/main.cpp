@@ -7,20 +7,34 @@
 
 #include <iostream>
 using namespace std;
-int main(int argc, const char * argv[]) {
-    // insert code here...
+int main() {
     cout << "Hasta que número"<<endl;
-    int n;
-    cin>>n;
+    int h;
+    cin>>h;
     
-    for (int i = 0; i<=n; i++) {
-        
-        if(i%i==0 && i%1==0){
+    int f = 0;
+    for (int n = 2; n<=h; n++) {
+        for (int i = 2; i<=n; i++) {
             
-            cout<<"Es primo: "<<i<<endl;
+           if(n%i==0 && n%n ==0)
+           {
+               f++;
+           }
+           
+        }
+        if(f>2){
+            f = 0;
+        }
+        else{
+            cout<<"SI Es primo: "<<n<<endl;
         }
         
-    }
+        
+        
+
+       
+     
+            }
     
     return 0;
 }
