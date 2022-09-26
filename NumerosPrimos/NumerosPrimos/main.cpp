@@ -28,13 +28,7 @@ int main() {
         else{
             cout<<"SI Es primo: "<<n<<endl;
         }
-        
-        
-        
-
-       
-     
-            }
+    }
     
     return 0;
 }
