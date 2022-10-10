@@ -10,6 +10,7 @@ int invertir_numero(int numero);
 
 void verificar_capicua(int numero);
 
+void digitos(int numero);
 
 using namespace std;
 
@@ -19,13 +20,31 @@ int main() {
     cout << "Ingrese el número: "<<endl;
     cin>> n;
     
+    digitos(n);
+    
     inverso = invertir_numero(n);
+    
     cout<<"El numero inverso es: "<<inverso<<endl;
+    
     verificar_capicua(n);
     
     
     
     return 0;
+}
+
+void digitos(int numero)
+{
+    int digito = 0;
+
+    while (numero > 0)
+    {
+        digito = numero % 10;
+        cout<<digito<<endl;
+        numero = numero / 10;
+
+    }
+
 }
 
 int invertir_numero(int numero)
